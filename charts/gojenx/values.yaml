@@ -3,8 +3,8 @@
 # Declare variables to be passed into your templates.
 replicaCount: 1
 image:
-  repository: draft
-  tag: dev
+  repository: 10.19.241.154:5000/junibutler/gojenx
+  tag: 0.0.4
   pullPolicy: IfNotPresent
 service:
   name: gojenx
