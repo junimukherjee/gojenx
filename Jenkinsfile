@@ -58,7 +58,7 @@ pipeline {
             dir ('/home/jenkins/go/src/github.com/junibutler/gojenx') {
               container('go') {
                 sh "make build"
-                sh 'export VERSION=`cat VERSION` && skaffold run -f skaffold.yaml'
+                sh 'export VERSION=`cat VERSION` && skaffold build -f skaffold.yaml'
               }
             }
           }
