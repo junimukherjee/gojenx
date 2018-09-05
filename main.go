@@ -7,7 +7,7 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	title := "Jenkins X golang http example"
+	title := "Captain Kubernetes"
 
 	from := ""
 	if r.URL != nil {
@@ -17,7 +17,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		log.Printf("title: %s\n", title)
 	}
 
-	fmt.Fprintf(w, "Pipeline is no longer a pipe dream! Big hello from:  "+title+"\n")
+	fmt.Fprintf(w, "#TimeIsNow! Big hello from:  "+title+"\n")
 }
 
 func main() {
